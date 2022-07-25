@@ -1,6 +1,6 @@
 import React from "react";
 import YourBotArmy from "./YourBotArmy";
-import BotCollection from "./BotCollection";
+import GetAllBots from "./GetAllBolts";
 
 function BotsPage() {
   //start here with your code for step one
@@ -8,9 +8,9 @@ function BotsPage() {
   return (
     <div>
       <YourBotArmy />
-      <BotCollection />
+      <GetAllBots />
     </div>
-  )
+  );
 }
 
 export default BotsPage;
