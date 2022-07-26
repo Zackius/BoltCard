@@ -10,7 +10,7 @@ body {
 
 .bot-army {
   overflow-x: scroll;
-  min-height: 400px;
+  min-height: 300px;
   max-width: 100%;
 }
 
@@ -25,5 +25,14 @@ body {
   padding: 0px 20px;
 }
 .row {
-  display: grid;
+  display: flex
 }
+.row div{
+  flex-direction: row;
+}
+.images{
+  display: flex;
+  flex-direction: row
+  
+}
+

@@ -16,7 +16,6 @@ function GetAllBots() {
         const allBolt = response.data;
         setBolt(allBolt);
       })
-
       .catch((err) => {
         return err.response;
       });

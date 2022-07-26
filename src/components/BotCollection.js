@@ -1,14 +1,22 @@
-
-import React, { useState} from "react";
+import React from "react";
 
 function BotCollection({ bolt }) {
+  // const [add, setAdd] = useState("");
+
+  // const handleClick = () => {
+  //   // setAdd();
+  // };
+  // console.log(add);
+  // function manageBolt(boll) {
+  //   setAdd(boll);
+  // }
   if (bolt.length > 0) {
     return bolt.map((bolts, index) => {
       return (
         <div key={index} className="ui four column grid">
           <div className="row">
             <div>
-              <img src={bolts.avatar_url} alt={bolts.name} />
+              <img className="images" src={bolts.avatar_url} alt={bolts.name} />
               <p> {bolts.name}</p>
               <span>{bolts.health}</span>
               <span>{bolts.damage}</span>
@@ -19,15 +27,10 @@ function BotCollection({ bolt }) {
       );
     });
   }
-  
-  const [bot, setbot] = useState("")
-  
-
   return (
     <div className="ui four column grid">
       <div className="row">
-        {/*...and here..*/}
-        Collection of all bots
+        <div></div>
       </div>
     </div>
   );
